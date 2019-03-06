@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Bilal\AppData\Local\Temp\testng-eclipse--965201128\testng-customsuite.xml</span>
+                    <span>C:\Users\Bilal\AppData\Local\Temp\testng-eclipse-1183679487\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.classic.crmpro.test.HomePage" hash-for-method="contactTest">contactTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.classic.crmpro.test.HomePage" hash-for-method="dealsTest">dealsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.classic.crmpro.test.HomePage" hash-for-method="tasksTest">tasksTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -129,12 +139,26 @@
                   <span class="method-name">contactTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dealsTest">
+                  </a> <!-- dealsTest -->
+                  <span class="method-name">dealsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tasksTest">
+                  </a> <!-- tasksTest -->
+                  <span class="method-name">tasksTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Bilal\AppData\Local\Temp\testng-eclipse--965201128\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Bilal\AppData\Local\Temp\testng-eclipse-1183679487\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -183,16 +207,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'contactTest')
 data.setCell(0, 2, 'com.classic.crmpro.test.HomePage')
-data.setCell(0, 3, 1427);
+data.setCell(0, 3, 1942);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'dealsTest')
+data.setCell(1, 2, 'com.classic.crmpro.test.HomePage')
+data.setCell(1, 3, 1424);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tasksTest')
+data.setCell(2, 2, 'com.classic.crmpro.test.HomePage')
+data.setCell(2, 3, 1006);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -225,11 +257,35 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">contactTest</span>
-                <span class="method-start">20604 ms</span>
+                <span class="method-start">18864 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">doAfterTests</span>
-                <span class="method-start">22033 ms</span>
+                <span class="method-start">20807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpAndLogin</span>
+                <span class="method-start">23008 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dealsTest</span>
+                <span class="method-start">41198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterTests</span>
+                <span class="method-start">42623 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpAndLogin</span>
+                <span class="method-start">44804 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tasksTest</span>
+                <span class="method-start">62995 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterTests</span>
+                <span class="method-start">64002 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
