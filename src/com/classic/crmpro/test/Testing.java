@@ -1,4 +1,5 @@
 package com.classic.crmpro.test;
+
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeMethod;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+
 public class Testing {
 	//Global variable
 	public WebDriver driver;
@@ -34,21 +36,21 @@ public class Testing {
 	public void urlTest() {
 		String expectedResult = "https://classic.crmpro.com/index.html";
 		String actualResult = driver.getCurrentUrl();
-		Assert.assertEquals(actualResult, expectedResult, "Failed because link is not as expected");
+		Assert.assertEquals(actualResult, expectedResult, "Failed because link is not as expected!");
 	}
 	//Testing if page title is correct with priority 2
 	@Test(priority = 2)
 	public void titleTest() {
 		String expectedResult = "CRMPRO - CRM software for customer relationship management, sales, and support.";
 		String actualResult = driver.getTitle();
-		Assert.assertEquals(actualResult, expectedResult, "Failed because title is not as expected");
+		Assert.assertEquals(actualResult, expectedResult, "Failed because title is not as expected!");
 	}
 	//Testing if logo is displayed with priority 3
 	@Test(priority = 3)
 	public void logoTest() {
 		WebElement logo = driver.findElement(By.xpath("//*[@src='https://classic.crmpro.com/img/logo.png']"));
 		boolean actualResult = logo.isDisplayed();
-		Assert.assertTrue(actualResult);
+		Assert.assertTrue(actualResult,"Failed because logo is not displayed!");
 	}
 	//Testing login button	
 	@Test(priority = 4)
@@ -64,7 +66,7 @@ public class Testing {
 		SoftAssert soft = new SoftAssert();
 		WebElement mainFrame = driver.findElement(By.name("mainpanel"));
 		boolean mainFrameIsDisplayed = mainFrame.isDisplayed();
-		soft.assertTrue(mainFrameIsDisplayed);
+		soft.assertTrue(mainFrameIsDisplayed,"Login unsuccessful!");
 		soft.assertAll();
 	}
 }
