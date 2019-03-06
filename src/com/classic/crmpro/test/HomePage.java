@@ -38,7 +38,7 @@ public class HomePage {
 	public void doAfterTests() {
 		driver.quit();
 	}
-	@Test(priority = 1)
+	@Test(priority = 5)
 	public void contactTest() {
 		driver.switchTo().frame("mainpanel");
 		WebElement contact = driver.findElement(By.xpath("//a[@title='Contacts']"));
@@ -47,7 +47,7 @@ public class HomePage {
 		boolean statusLabelisDisplayed = statusLabel.isDisplayed();
 		Assert.assertTrue(statusLabelisDisplayed,"Status label is not displayed, so contact test failed!");
 	}
-	@Test(priority = 2)
+	@Test(priority = 6)
 	public void dealsTest() {
 		driver.switchTo().frame("mainpanel");
 		WebElement contact = driver.findElement(By.xpath("//a[@title='Contacts']"));
@@ -56,7 +56,7 @@ public class HomePage {
 		boolean statusLabelisDisplayed = statusLabel.isDisplayed();
 		Assert.assertTrue(statusLabelisDisplayed,"keyword label is not displayed, so deals test failed!");
 	}
-	@Test(priority = 3)
+	@Test(priority = 7)
 	public void tasksTest() {
 		driver.switchTo().frame("mainpanel");
 		WebElement contact = driver.findElement(By.xpath("//a[@title='Tasks']"));

@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Testing {
+public class LoginPage {
 	//Global variable
 	public WebDriver driver;
 	//This be executed before all tests
