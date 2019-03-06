@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="63455" started-at="2019-03-06T14:32:46Z" finished-at="2019-03-06T14:33:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="63455" started-at="2019-03-06T14:32:46Z" finished-at="2019-03-06T14:33:49Z">
+      <class name="com.classic.crmpro.test.Testing">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.classic.crmpro.test.Testing@643b1d11]" name="setUp" is-config="true" duration-ms="12135" started-at="2019-03-06T15:32:46Z" finished-at="2019-03-06T15:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="urlTest()[pri:1, instance:com.classic.crmpro.test.Testing@643b1d11]" name="urlTest" duration-ms="11" started-at="2019-03-06T15:32:58Z" finished-at="2019-03-06T15:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlTest -->
+        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.Testing@643b1d11]" name="doAfterTests" is-config="true" duration-ms="1774" started-at="2019-03-06T15:32:58Z" finished-at="2019-03-06T15:33:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.classic.crmpro.test.Testing@643b1d11]" name="setUp" is-config="true" duration-ms="12741" started-at="2019-03-06T15:33:00Z" finished-at="2019-03-06T15:33:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="titleTest()[pri:2, instance:com.classic.crmpro.test.Testing@643b1d11]" name="titleTest" duration-ms="7" started-at="2019-03-06T15:33:12Z" finished-at="2019-03-06T15:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.Testing@643b1d11]" name="doAfterTests" is-config="true" duration-ms="2008" started-at="2019-03-06T15:33:13Z" finished-at="2019-03-06T15:33:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.classic.crmpro.test.Testing@643b1d11]" name="setUp" is-config="true" duration-ms="13252" started-at="2019-03-06T15:33:15Z" finished-at="2019-03-06T15:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logoTest()[pri:3, instance:com.classic.crmpro.test.Testing@643b1d11]" name="logoTest" duration-ms="64" started-at="2019-03-06T15:33:28Z" finished-at="2019-03-06T15:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoTest -->
+        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.Testing@643b1d11]" name="doAfterTests" is-config="true" duration-ms="1923" started-at="2019-03-06T15:33:28Z" finished-at="2019-03-06T15:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterTests -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.classic.crmpro.test.Testing@643b1d11]" name="setUp" is-config="true" duration-ms="11381" started-at="2019-03-06T15:33:30Z" finished-at="2019-03-06T15:33:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="homePageLoginButtonTest()[pri:4, instance:com.classic.crmpro.test.Testing@643b1d11]" name="homePageLoginButtonTest" duration-ms="6112" started-at="2019-03-06T15:33:41Z" finished-at="2019-03-06T15:33:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageLoginButtonTest -->
+        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.Testing@643b1d11]" name="doAfterTests" is-config="true" duration-ms="2028" started-at="2019-03-06T15:33:47Z" finished-at="2019-03-06T15:33:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterTests -->
+      </class> <!-- com.classic.crmpro.test.Testing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
