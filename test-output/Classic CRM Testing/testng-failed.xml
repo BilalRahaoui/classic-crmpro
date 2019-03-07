@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Classic CRM Testing]">
+  <test name="End toEnd(failed)">
+    <classes>
+      <class name="com.classic.crmpro.test.LoginPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="doAfterTests"/>
+          <include name="doAfterTests"/>
+        </methods>
+      </class> <!-- com.classic.crmpro.test.LoginPage -->
+      <class name="com.classic.crmpro.test.HomePage">
+        <methods>
+          <include name="tasksTest"/>
+          <include name="contactTest"/>
+          <include name="dealsTest"/>
+          <include name="Login"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.classic.crmpro.test.HomePage -->
+    </classes>
+  </test> <!-- End toEnd(failed) -->
+  <test name="Sanity Test(failed)">
+    <classes>
+      <class name="com.classic.crmpro.test.LoginPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="doAfterTests"/>
+          <include name="doAfterTests"/>
+        </methods>
+      </class> <!-- com.classic.crmpro.test.LoginPage -->
+      <class name="com.classic.crmpro.test.HomePage">
+        <methods>
+          <include name="contactTest"/>
+          <include name="Login"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- com.classic.crmpro.test.HomePage -->
+    </classes>
+  </test> <!-- Sanity Test(failed) -->
+</suite> <!-- Failed suite [Classic CRM Testing] -->

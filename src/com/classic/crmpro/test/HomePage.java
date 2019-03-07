@@ -10,19 +10,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class HomePage {
 	//Global variable
 	public WebDriver driver;
+	//Parameters
+	@Parameters({"URL","WebDriver"})
 	//This be executed before all tests
-	@BeforeMethod
-	public void setUpAndLogin() {
-		System.setProperty("webdriver.gecko.driver", "D:\\Java\\Eclipse\\WorkSpace\\ClassicCRMTesting\\src\\WebDriver\\geckodriver.exe");
+	@BeforeMethod(groups= {"E2E","Sanity","Regression"})
+	public void setUpAndLogin(String URL,String WebDriver) {
+		System.setProperty("webdriver.gecko.driver", WebDriver);
 		driver = new FirefoxDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.get("https://classic.crmpro.com/");
+		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("preloader")));
@@ -34,11 +37,11 @@ public class HomePage {
 		loginButton.click();
 	}
 	//This be executed after all tests
-	@AfterMethod
+	@AfterMethod(groups= {"E2E","Sanity","Regression"})
 	public void doAfterTests() {
 		driver.quit();
 	}
-	@Test(priority = 5)
+	@Test(priority = 5,groups= {"E2E","Sanity","Regression"})
 	public void contactTest() {
 		driver.switchTo().frame("mainpanel");
 		WebElement contact = driver.findElement(By.xpath("//a[@title='Contacts']"));
@@ -47,7 +50,7 @@ public class HomePage {
 		boolean statusLabelisDisplayed = statusLabel.isDisplayed();
 		Assert.assertTrue(statusLabelisDisplayed,"Status label is not displayed, so contact test failed!");
 	}
-	@Test(priority = 6)
+	@Test(priority = 6,groups= {"Sanity","Regression"})
 	public void dealsTest() {
 		driver.switchTo().frame("mainpanel");
 		WebElement contact = driver.findElement(By.xpath("//a[@title='Contacts']"));
@@ -56,7 +59,7 @@ public class HomePage {
 		boolean statusLabelisDisplayed = statusLabel.isDisplayed();
 		Assert.assertTrue(statusLabelisDisplayed,"keyword label is not displayed, so deals test failed!");
 	}
-	@Test(priority = 7)
+	@Test(priority = 7,groups= {"Regression"})
 	public void tasksTest() {
 		driver.switchTo().frame("mainpanel");
 		WebElement contact = driver.findElement(By.xpath("//a[@title='Tasks']"));

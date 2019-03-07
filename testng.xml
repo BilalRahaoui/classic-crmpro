@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Classic CRM Testing">
-  <test thread-count="5" name="End toEnd">
-    <classes>
-      <class name="com.classic.crmpro.test.HomePage"/>
-      <class name="com.classic.crmpro.test.LoginPage">
-      <methods>
-      <exclude name="logoTest"></exclude>
-      </methods>
-      </class>
-    </classes>
-  </test> <!-- End toEnd -->
+<parameter name="URL" value="https://classic.crmpro.com/"></parameter>
+<parameter name="WebDriver" value="D:\\Java\\Eclipse\\WorkSpace\\ClassicCRMTesting\\src\\WebDriver\\geckodriver.exe"></parameter>
+	<test thread-count="5" name="E2E">
+		<groups>
+			<run>
+				<include name="E2E"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.classic.crmpro.test.LoginPage">
+				<methods>
+					<exclude name="urlTest"></exclude>
+				</methods>
+			</class>
+			<class name="com.classic.crmpro.test.HomePage" />
+		</classes>
+	</test> <!-- End2End -->
+	<test thread-count="5" name="Sanity">
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.classic.crmpro.test.LoginPage" />
+			<class name="com.classic.crmpro.test.HomePage" />
+
+		</classes>
+	</test> <!-- Sanity -->
+	<test thread-count="5" name="Regression">
+		<groups>
+			<run>
+				<include name="Regression"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.classic.crmpro.test.HomePage" />
+			<class name="com.classic.crmpro.test.LoginPage" />
+		</classes>
+	</test> <!-- Regression -->
 </suite> <!-- Classic CRM Testing -->

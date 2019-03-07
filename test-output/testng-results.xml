@@ -1,87 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="4" failed="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Classic CRM Testing" duration-ms="111619" started-at="2019-03-06T16:07:12Z" finished-at="2019-03-06T16:09:03Z">
+  <suite name="Default suite" duration-ms="51" started-at="2019-03-07T11:50:15Z" finished-at="2019-03-07T11:50:15Z">
     <groups>
+      <group name="Sanity">
+        <method signature="LoginPage.homePageLoginButtonTest()[pri:4, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="homePageLoginButtonTest" class="com.classic.crmpro.test.LoginPage"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="LoginPage.homePageLoginButtonTest()[pri:4, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="homePageLoginButtonTest" class="com.classic.crmpro.test.LoginPage"/>
+        <method signature="LoginPage.logoTest()[pri:3, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="logoTest" class="com.classic.crmpro.test.LoginPage"/>
+      </group> <!-- Regression -->
+      <group name="E2E">
+        <method signature="LoginPage.homePageLoginButtonTest()[pri:4, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="homePageLoginButtonTest" class="com.classic.crmpro.test.LoginPage"/>
+        <method signature="LoginPage.titleTest()[pri:2, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="titleTest" class="com.classic.crmpro.test.LoginPage"/>
+        <method signature="LoginPage.urlTest()[pri:1, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="urlTest" class="com.classic.crmpro.test.LoginPage"/>
+      </group> <!-- E2E -->
     </groups>
-    <test name="End toEnd" duration-ms="111619" started-at="2019-03-06T16:07:12Z" finished-at="2019-03-06T16:09:03Z">
-      <class name="com.classic.crmpro.test.HomePage">
-        <test-method status="PASS" signature="setUpAndLogin()[pri:0, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="setUpAndLogin" is-config="true" duration-ms="19262" started-at="2019-03-06T17:07:12Z" finished-at="2019-03-06T17:07:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpAndLogin -->
-        <test-method status="PASS" signature="contactTest()[pri:5, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="contactTest" duration-ms="1049" started-at="2019-03-06T17:07:31Z" finished-at="2019-03-06T17:07:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contactTest -->
-        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="doAfterTests" is-config="true" duration-ms="1986" started-at="2019-03-06T17:07:32Z" finished-at="2019-03-06T17:07:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterTests -->
-        <test-method status="PASS" signature="setUpAndLogin()[pri:0, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="setUpAndLogin" is-config="true" duration-ms="16701" started-at="2019-03-06T17:07:34Z" finished-at="2019-03-06T17:07:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpAndLogin -->
-        <test-method status="PASS" signature="dealsTest()[pri:6, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="dealsTest" duration-ms="1011" started-at="2019-03-06T17:07:51Z" finished-at="2019-03-06T17:07:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dealsTest -->
-        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="doAfterTests" is-config="true" duration-ms="1980" started-at="2019-03-06T17:07:52Z" finished-at="2019-03-06T17:07:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterTests -->
-        <test-method status="PASS" signature="setUpAndLogin()[pri:0, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="setUpAndLogin" is-config="true" duration-ms="17705" started-at="2019-03-06T17:07:54Z" finished-at="2019-03-06T17:08:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpAndLogin -->
-        <test-method status="PASS" signature="tasksTest()[pri:7, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="tasksTest" duration-ms="1703" started-at="2019-03-06T17:08:11Z" finished-at="2019-03-06T17:08:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tasksTest -->
-        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.HomePage@2ef5e5e3]" name="doAfterTests" is-config="true" duration-ms="1984" started-at="2019-03-06T17:08:13Z" finished-at="2019-03-06T17:08:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterTests -->
-      </class> <!-- com.classic.crmpro.test.HomePage -->
+    <test name="Default test" duration-ms="51" started-at="2019-03-07T11:50:15Z" finished-at="2019-03-07T11:50:15Z">
       <class name="com.classic.crmpro.test.LoginPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="setUp" is-config="true" duration-ms="12147" started-at="2019-03-06T17:08:15Z" finished-at="2019-03-06T17:08:27Z">
+        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="setUp" is-config="true" duration-ms="0" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in C:\Users\Bilal\AppData\Local\Temp\testng-eclipse-1178507402\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Configuration on method setUp but has not been marked @Optional or defined
+in C:\Users\Bilal\AppData\Local\Temp\testng-eclipse-1178507402\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="urlTest()[pri:1, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="urlTest" duration-ms="4" started-at="2019-03-06T17:08:27Z" finished-at="2019-03-06T17:08:27Z">
+        <test-method status="SKIP" signature="urlTest()[pri:1, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="urlTest" duration-ms="6" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlTest -->
-        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="doAfterTests" is-config="true" duration-ms="1685" started-at="2019-03-06T17:08:27Z" finished-at="2019-03-06T17:08:29Z">
+        <test-method status="SKIP" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="doAfterTests" is-config="true" duration-ms="0" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doAfterTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="setUp" is-config="true" duration-ms="12144" started-at="2019-03-06T17:08:29Z" finished-at="2019-03-06T17:08:41Z">
+        <test-method status="SKIP" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="setUp" is-config="true" duration-ms="0" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="titleTest()[pri:2, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="titleTest" duration-ms="6" started-at="2019-03-06T17:08:41Z" finished-at="2019-03-06T17:08:41Z">
+        <test-method status="SKIP" signature="titleTest()[pri:2, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="titleTest" duration-ms="1" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="doAfterTests" is-config="true" duration-ms="1596" started-at="2019-03-06T17:08:41Z" finished-at="2019-03-06T17:08:43Z">
+        <test-method status="SKIP" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="doAfterTests" is-config="true" duration-ms="0" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doAfterTests -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="setUp" is-config="true" duration-ms="13015" started-at="2019-03-06T17:08:43Z" finished-at="2019-03-06T17:08:56Z">
+        <test-method status="SKIP" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="setUp" is-config="true" duration-ms="0" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homePageLoginButtonTest()[pri:4, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="homePageLoginButtonTest" duration-ms="5466" started-at="2019-03-06T17:08:56Z" finished-at="2019-03-06T17:09:01Z">
+        <test-method status="SKIP" signature="logoTest()[pri:3, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="logoTest" duration-ms="1" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoTest -->
+        <test-method status="SKIP" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="doAfterTests" is-config="true" duration-ms="0" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterTests -->
+        <test-method status="SKIP" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="setUp" is-config="true" duration-ms="0" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="homePageLoginButtonTest()[pri:4, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="homePageLoginButtonTest" duration-ms="1" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageLoginButtonTest -->
-        <test-method status="PASS" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="doAfterTests" is-config="true" duration-ms="2150" started-at="2019-03-06T17:09:01Z" finished-at="2019-03-06T17:09:03Z">
+        <test-method status="SKIP" signature="doAfterTests()[pri:0, instance:com.classic.crmpro.test.LoginPage@36d4b5c]" name="doAfterTests" is-config="true" duration-ms="0" started-at="2019-03-07T12:50:15Z" finished-at="2019-03-07T12:50:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doAfterTests -->
       </class> <!-- com.classic.crmpro.test.LoginPage -->
-    </test> <!-- End toEnd -->
-  </suite> <!-- Classic CRM Testing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
