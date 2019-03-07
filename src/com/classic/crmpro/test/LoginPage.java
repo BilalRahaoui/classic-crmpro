@@ -3,6 +3,7 @@ package com.classic.crmpro.test;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
@@ -24,6 +25,8 @@ public class LoginPage {
 	//Parameters
 	@Parameters({"URL","WebDriver"})
 	//This be executed before all tests
+	
+	
 	@BeforeMethod(groups= {"E2E","Sanity","Regression"})
 	public void setUp(String URL,String WebDriver) {
 		System.setProperty("webdriver.gecko.driver", WebDriver);
@@ -60,20 +63,34 @@ public class LoginPage {
 		Assert.assertTrue(actualResult,"Failed because logo is not displayed!");
 	}
 	//Testing login button	
-	@Test(priority = 4,groups= {"E2E","Sanity","Regression"})
-	public void homePageLoginButtonTest() {
+	@Test(priority = 4,groups= {"E2E","Sanity","Regression"},dataProvider="loginData")
+	public void homePageLoginButtonTest(String username,String password) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("preloader")));
 		WebElement usernameTextField =  driver.findElement(By.xpath("//input[@placeholder='Username']"));
 		WebElement passwordTextField = driver.findElement(By.xpath("//input[@placeholder='Password']"));
 		WebElement loginButton = driver.findElement(By.xpath("//input[@value='Login']"));
-		usernameTextField.sendKeys("rahaouitesting");
-		passwordTextField.sendKeys("Bmn123456");
+		usernameTextField.sendKeys(username);
+		passwordTextField.sendKeys(password);
 		loginButton.click();
 		SoftAssert soft = new SoftAssert();
 		WebElement mainFrame = driver.findElement(By.name("mainpanel"));
 		boolean mainFrameIsDisplayed = mainFrame.isDisplayed();
 		soft.assertTrue(mainFrameIsDisplayed,"Login unsuccessful!");
 		soft.assertAll();
+	}
+	//DataProvider
+	@DataProvider
+	public Object[][] loginData() {
+		Object[][] myDataTable = new Object[4][2];
+		myDataTable[0][0] = "rahaouitesting";
+		myDataTable[0][1] = "Bmn123456";
+		myDataTable[1][0] = "Incorrectuser";
+		myDataTable[1][1] = "Bmn123456";
+		myDataTable[2][0] = "rahaouitesting";
+		myDataTable[2][1] = "incorrect@pass";
+		myDataTable[3][0] = "incorrectuser";
+		myDataTable[3][1] = "incorrect@pass";
+		return myDataTable;
 	}
 }

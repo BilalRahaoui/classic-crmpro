@@ -1,44 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Classic CRM Testing]">
-  <test name="End toEnd(failed)">
+  <parameter name="WebDriver" value="D:\\Java\\Eclipse\\WorkSpace\\ClassicCRMTesting\\src\\WebDriver\\geckodriver.exe"/>
+  <parameter name="URL" value="https://classic.crmpro.com/"/>
+  <test name="E2E(failed)">
     <classes>
       <class name="com.classic.crmpro.test.LoginPage">
         <methods>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="doAfterTests"/>
-          <include name="doAfterTests"/>
+          <include name="homePageLoginButtonTest"/>
         </methods>
       </class> <!-- com.classic.crmpro.test.LoginPage -->
-      <class name="com.classic.crmpro.test.HomePage">
-        <methods>
-          <include name="tasksTest"/>
-          <include name="contactTest"/>
-          <include name="dealsTest"/>
-          <include name="Login"/>
-          <include name="Login"/>
-        </methods>
-      </class> <!-- com.classic.crmpro.test.HomePage -->
     </classes>
-  </test> <!-- End toEnd(failed) -->
-  <test name="Sanity Test(failed)">
-    <classes>
-      <class name="com.classic.crmpro.test.LoginPage">
-        <methods>
-          <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="doAfterTests"/>
-          <include name="doAfterTests"/>
-        </methods>
-      </class> <!-- com.classic.crmpro.test.LoginPage -->
-      <class name="com.classic.crmpro.test.HomePage">
-        <methods>
-          <include name="contactTest"/>
-          <include name="Login"/>
-          <include name="Login"/>
-        </methods>
-      </class> <!-- com.classic.crmpro.test.HomePage -->
-    </classes>
-  </test> <!-- Sanity Test(failed) -->
+  </test> <!-- E2E(failed) -->
 </suite> <!-- Failed suite [Classic CRM Testing] -->
